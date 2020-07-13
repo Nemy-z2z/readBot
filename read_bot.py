@@ -41,20 +41,11 @@ async def register(ctx, arg1, arg2):
 
 @client.event
 async def on_voice_state_update(member, before, after):
-    # ねみねみクラブ_開発環境
-    server_id_test = 727054050838970418
-    text_id_test = 728852072409333880
-    # Qコミュ
-    server_id_Q = 586510755747069952
-    text_id_bot = 587964658271387669
+    server_id_test = # サーバーID
+    text_id_test = # テキストチャンネルID
 
     if member.guild.id == server_id_test:   # サーバーid
         text_ch = client.get_channel(text_id_test)   # 通知させたいTEXTチャンネルid
-        if before.channel is None:
-            msg = f'【VC参加ログ】{member.name} が {after.channel.name} に参加しました。'
-            await text_ch.send(msg)
-    if member.guild.id == server_id_Q:   # サーバーid
-        text_ch = client.get_channel(text_id_bot)   # 通知させたいTEXTチャンネルid
         if before.channel is None:
             msg = f'【VC参加ログ】{member.name} が {after.channel.name} に参加しました。'
             await text_ch.send(msg)
