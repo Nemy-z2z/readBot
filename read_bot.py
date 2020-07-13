@@ -79,4 +79,4 @@ async def on_message(message):
     print('---on_message_end---')
 
 
-client.run("NzI2OTcxMDQyMzQ1NjQ4MjQw.XvmOJQ.pH3oSc3jByURfU9YvB1uM0YuK2M")
+client.run("トークン")
